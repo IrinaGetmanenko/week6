@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets\normalize.css">
+</head>
+
+<style>
+
+.site{
+  border: 2px solid red;
+  display: grid;
+  grid-template-areas:"header header header "
+                       "inner inner  aside"
+                       "inner inner aside"
+                       "footer footer footer"
+}
+
+.header {
+  background-color: rgb(244, 209, 244);
+  grid-area: header;
+  text-align: center;
+  height: 80px;
+}
+
+.inner{
+  border: 1px solid red;
+  display: grid;
+  grid-area: inner;
+  grid-template-areas:"main main"
+                       "left right"
+                       "bottom bottom"
+                       
+  background-color: beige;
+  gap: 10px 20px;
+  text-align: center;
+  padding: 10px;
+  
+   
+}
+
+.main{
+  grid-area: main;
+padding: 10px 10px 30px;
+ } 
+ 
+.block{
+  background-color: rgb(254, 234,185);
+  text-align: inherit;
+}
+
+
+.block left
+{
+  grid-area: left;
+ 
+}
+
+.block right
+{
+  grid-area:right;
+
+}
+.block bottom
+{
+  grid-area:bottom;
+
+}
+
+
+.aside {
+  border: 1px solid red;
+  grid-area: aside;
+  background-color: rgb(185, 235, 185);
+  
+}
+
+.footer {
+grid-area: footer;
+
+border: 1px solid red;
+height: 50px;
+width: 200px;
+grid-template-columns: repeat(4, 1fr);
+justify-content: space-between;
+
+}
+
+.section-1  {
+  
+  background-color: rgb(247, 217, 247);
+border: 1px solid red;
+padding: 10px;
+}
+
+.section-2  {
+    border: 1px solid red;
+  background-color: rgb(247, 217, 247);
+
+}
+
+.section-3  {
+    border: 1px solid red;
+  background-color: rgb(247, 217, 247);
+
+}
+
+.section-4  {
+    border: 1px solid red;
+  background-color: rgb(247, 217, 247);
+
+}
+
+</style>
+<body>
+      
+  <site class=" site">
+
+<header class="header">[Шапка страницы]</header>
+
+
+<div class="inner">
+  <inner class="main">
+    <span>[Основная часть]</span>
+  </inner>
+<div class="block left">
+  <span>[Еще-1]</span>
+  </div>
+  <inner class="block right">
+    <span>[Еще-2]</span>
+  </inner>
+    <inner class="block bottom">
+      <span>[Еще-3]</span>
+    </inner>
+</div>
+
+<aside class="aside">[Боковая часть]</aside>
+
+
+<footer class="footer">
+  <footer class="section-1">
+    <span>[Секция футера 1]</span>
+  </footer>
+  <footer class="section-2">
+    <span>[Секция футера 2]</span>
+  </footer>
+  <footer class="section-3">
+    <span>[Секция футера 3]</span>
+    <footer class="section-4">
+      <span>[Секция футера 4]</span>
+  </footer>
+
+
+</footer>
+
+</site>
+
+
+
+</body>
+</html>

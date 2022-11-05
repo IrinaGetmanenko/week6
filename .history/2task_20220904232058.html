@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Document</title>
+    <style>
+    .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.h1{
+    display: flex;
+    justify-content: center;
+   height: 70px;
+    background-color: #bfbbc3;
+}
+
+.inner{
+  border: 1px solid red;
+  display: grid;
+  grid-template-areas:"main, main"
+                       "left, right"
+                       "bottom bottom"
+  grid-template-columns: 25% 25% 50%
+  grid-template-rows:   
+  background-color: beige;
+  gap: 10px 20px;
+  text-align: center;
+  padding: 10px;
+   
+}
+
+.block{
+    background: rgb(254,234,185);
+}
+.main{
+grid-area: main;
+padding: 10px 10px 30px;
+ } 
+
+
+
+.left
+{
+  grid-area:left;
+
+}
+
+.right
+{
+  grid-area:right;
+
+}
+.bottom
+{
+  grid-area:bottom;
+
+}
+.aside{
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(178, 231, 178);
+    width: 30%;
+
+    
+
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+   height: 100px;
+    background-color: #bfbbc3;
+    flex-wrap: wrap;
+}
+.f1{
+
+align-self: center;
+padding: 30px;
+background-color: aliceblue;
+
+
+}
+.f2{
+
+align-self: center;
+padding: 30px;
+background-color: aliceblue;
+}
+.f3{
+
+align-self: center;
+padding: 30px;
+background-color: aliceblue;
+}
+.f4{
+
+align-self: center;
+padding: 30px;
+background-color: aliceblue;
+}
+</style>
+
+</head>
+<body class="container-1">
+    <header class="h1" >[Шапка страницы]</header>
+
+    <div class="inner">
+        <span class="main">[Основная часть]</span>
+      <div class="block left">
+        <span>[Еще-1]</span>
+        </div>
+        <div class="block right">
+          <span>[Еще-2]</span>
+        </div>
+          <div class="block bottom">
+            <span>[Еще-3]</span>
+            </div>
+      </div>
+
+<footer class="footer">
+       <footer class="f1">Секция1</footer>
+       <footer class="f2">Секция2</footer>
+       <footer class="f3">Секция3</footer>
+       <footer class="f4">Секция4</footer>
+</footer>
+
+</body>
+</html>

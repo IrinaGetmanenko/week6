@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xbox</title>
+    <link rel="stylesheet" href="assets\normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+</head>
+<style>
+    .nav{
+        display: grid;
+        height: 60px;
+        background-color:#373A3C ;
+        border: 1px solid red;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    }
+    .xbox_logo{
+        width: 96px;
+        height: 29px;
+        border: 1px solid red;
+
+    }
+
+    .games{
+        border: 1px solid red;
+        height: 16px;
+        width: 51px;
+        font-family: 'Open Sans', sans-serif;
+        color: #FFFFFF 50%;
+        font-size: 16px;
+        
+        
+    }
+    .games:hover{
+        color: #FFFFFF;
+    }
+    .console{
+        border: 1px solid red;
+        height: 16px;
+        width: 67px;
+        font-family: 'Open Sans', sans-serif;
+        color: #FFFFFF 50%;
+        font-size: 16px;
+        
+    }
+    .console:hover{
+        color: #FFFFFF;
+    }
+    .community{
+        border: 1px solid red;
+        height: 16px;
+        width: 83px;
+        font-family: 'Open Sans', sans-serif;
+        color: #FFFFFF 50%;
+        font-size: 16px;
+        
+    }
+    .community:hover{
+        color: #FFFFFF;
+    }
+
+    .searcher{
+        height: 38px;
+        width: 210px;
+        border: 1px solid red;
+
+    }
+    .searcher input{
+  width: 209.8px;
+  height: 38px;
+  top: 11px;
+  left: 877px;
+  border: 1px inner-border #CCCCCC;
+  border-radius: 4px;
+  outline: none;
+  background: #FFFFFF;
+  color: #CCCCCC;
+  font-family: 'Open Sans', sans-serif;
+
+    }
+    .user{
+        border: 1px solid red;
+        height: 16px;
+        width: 70px;
+        font-family: 'Open Sans', sans-serif;
+        color: #FFFFFF 50%;
+        font-size: 16px;
+    }
+    .user:hover{
+        color: #FFFFFF;
+    }
+    .carusel{
+        display: grid;
+        grid-template-rows:  30px 30px;
+        
+    }
+    img {
+        width: 100%;
+    }
+    .btn_watch{
+        border: 1px solid red;
+        height: 38px;
+        width: 136px;
+        border-radius: 4px;
+        background-color: #8DD83D;
+        font-family: 'Open Sans', sans-serif;
+        color: #FFFFFF;
+    }
+
+    .btn_explore{
+        border: 1px solid red;
+        height: 38px;
+        width: 148px;
+        border-radius: 4px;
+        background-color: linear-gradient(#686C6F,#373A3C);
+    }
+
+</style>
+
+<body>
+<navbar class="nav">
+<logo class="xbox_logo"><img src="assets\Group.png"></logo>
+<games class="games">Games</games>
+<consol class="console">Consoles</consol>
+<community class="community">Community</community>
+<searcher class="searcher"><form>
+    <input type="text" placeholder="Search">
+</form></searcher>
+<user class="user">MyXBOX</user>
+</navbar>
+
+
+<carusel class="carusel"><img src="assets\Star-Wars-Battlefront-II-combat.png">
+<button class="btn_watch">Watch trailer</button>
+<button class="btn_explore">Explore games</button>
+</carusel>
+
+
+
+
+</body>
+

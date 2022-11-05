@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Document</title>
+    <style>
+    .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.h1{
+    display: flex;
+    justify-content: center;
+   height: 70px;
+    background-color: #bfbbc3;
+}
+
+.container-2
+{
+  border: 1px solid red;
+  display: grid;
+  grid-template-areas: ;
+  background-color: beige;
+  gap: 10px 20px;
+  text-align: center;
+  padding: 10px;
+   
+}
+
+
+
+.section1
+{ 
+    border: 1px solid red;
+  grid-area:section1;
+
+}
+
+.section2
+{
+    border: 1px solid red;
+    grid-area:section2;
+
+}
+.section3
+{
+  grid-area:section3;
+
+}
+.aside{
+    grid-area:aside;
+    background-color: rgb(178, 231, 178);
+    width: 30%;
+
+    
+
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+   height: 100px;
+    background-color: #bfbbc3;
+    flex-wrap: wrap;
+}
+.f1{
+
+align-self: center;
+padding: 30px;
+background-color: aliceblue;
+
+
+}
+.f2{
+
+align-self: center;
+padding: 30px;
+background-color: aliceblue;
+}
+.f3{
+
+align-self: center;
+padding: 30px;
+background-color: aliceblue;
+}
+.f4{
+
+align-self: center;
+padding: 30px;
+background-color: aliceblue;
+}
+</style>
+
+</head>
+<body class="container-1">
+    <header class="h1" >[Шапка страницы]</header>
+
+   
+        <main class="container-2">[Основная часть]
+        <div class="section1"><span>[Eще1]</span></div>
+        <div class="section2"><span>[Еще2]</span></div>
+        <div class="section3"><span>[Еще3]</span></div>
+        <aside class="aside">[Боковая область]</aside>
+        </main>
+        
+        
+
+<footer class="footer">
+       <footer class="f1">Секция1</footer>
+       <footer class="f2">Секция2</footer>
+       <footer class="f3">Секция3</footer>
+       <footer class="f4">Секция4</footer>
+</footer>
+
+</body>
+</html>

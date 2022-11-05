@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+
+
+
+.item1{
+    grid-area: item1;
+    background-color: red;
+}
+.item2{
+    grid-area: item2;
+    background-color: blue;
+}
+.item3{
+    grid-area: item3;
+    background-color: yellow;
+}
+.item4{
+    grid-area: item4;
+    background-color: green;
+}
+.item5{
+    grid-area: item5;
+    background-color: violet;
+}
+.item6{
+    grid-area: item6;
+    background-color: pink;
+}
+
+
+.gridarea{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+      "item1 item1 item1 item1 item1 item1 item1 item1 item1"
+      "item2 item2 item2 item3 item3 item3 item3 item3 item3"
+      "item4 item4 item4 item5   item5   item6   item6   item6   item6";
+}
+
+
+</style>
+<body>
+        
+
+      <div class="gridarea">
+<item class="item1">item1</item>
+<item class="item2">item2</item>
+<item class="item3">item3</item>
+<item class="item4">item4</item>
+<item class="item4">item4</item>
+<item class="item5">item5</item>
+<item class="item6">item6</item>
+
+
+
+      </div>
+
+</body>
+</html>
